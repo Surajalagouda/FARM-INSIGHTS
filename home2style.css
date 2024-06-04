@@ -1,0 +1,243 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* main backgroung (imp) */
+.imp {
+    width: 100%;
+    min-height: 120vh;
+    background-image: linear-gradient(rgba(35, 64, 169, 0.449),rgba(160, 84, 84, 0.426)), url(hero1.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 10px 8%; */
+}
+
+/* hero img starts */
+.hero {
+    top: 0;
+    /* height: 50%; */
+    border: 2px solid black;
+    background-image: url(Screenshot\ 2024-05-31\ 185956.png);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+
+}
+
+.hero img {
+    height: 350px;
+    width: 350px;
+    border-radius: 500px;
+    margin-top: 100px;
+    z-index: -1;
+    /* filter: invert(100%); */
+}
+
+.hero h1 {
+    padding: 5px;
+    display: block;
+    background-color: bisque;
+    color: rgb(255, 1, 1);
+    /* margin-bottom: 100px; */
+}
+/* enter button */
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn a{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 30px;
+    border-bottom: 5px solid black;
+}
+.btn a i{
+    margin-left: 10px;
+}
+.btn a:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #508b25;
+    color: rgb(255, 255, 255);
+    border-bottom: 4px solid black;
+}
+/* navbar starts */
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(88, 152, 152); */
+}
+
+.navbar ul {
+    /* position: fixed; */
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 2.0rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    /* background-color: aquamarine; */
+    border-radius: 5px;
+}
+
+.lang a {
+    font-family: "Noto Sans Kannada", sans-serif;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    background-color: rgb(222, 213, 227);
+    border-radius: 5px;
+}
+
+.lang a:hover {
+    transition-duration: 2s;
+    font-size: 2.5rem;
+}
+
+.navbar ul li a:hover {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* container or boxs starts */
+.pH h1 {
+    /* background-color: rgb(255, 255, 255); */
+    padding: 30px 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(247, 244, 210, 0.378);
+}
+.items img{
+    height: 250px;
+    width: 280px;
+    padding: 30px;
+}
+.items img:hover{
+    animation: hover;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+}
+@keyframes hover {
+    0%{
+    padding: 20px;
+    width: 300px;
+    height: 270px;
+    }    
+    50%{
+        padding: 10px;
+    width: 320px;
+    height: 290px;
+    }
+    100%{
+    padding: 10px;
+    width: 320px;
+    height: 290px;
+    }
+}
+/* FOOTER */
+.foot-1{
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-1 a{
+    text-decoration: none;
+    align-items: center;
+}
+.foot-1 a h2:hover{
+    color: rgb(0, 0, 0);
+}
+.foot-1 a h2{
+    text-decoration: none;
+    color: white;
+}
+.foot-4{
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    /* font-weight: bolder; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.pages{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 25px;
+}
+.copy{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 8px;
+}
+/* fade effect */
+.hide{
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}

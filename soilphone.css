@@ -1,0 +1,162 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    border: 2px solid black;
+    background-image: url(Screenshot\ 2024-05-31\ 185956.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero img {
+    height: 50px;
+    border-radius: 500px;
+    margin-top: 10px;
+    margin-bottom: 300px;
+}
+
+.hero h1 {
+    display: none;
+    color: white;
+    margin-bottom: 100px;
+}
+/* returning home button starts */
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.btn a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+}
+.btn a:hover{
+    background-color: rgb(151, 164, 132);
+    color: black;
+}
+/* soil selection container starts */
+.soil h1{
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+.items a{
+    text-decoration: none;
+    color: black;
+}
+.items a:hover{
+    color: #374758;
+    background-color: aliceblue;
+}
+.items img{
+    padding: 5px;
+    height: 180px;
+    width: 180px;
+    box-decoration-break: clone;
+}
+.items a h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.select{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: aquamarine;
+}
+.select:hover{
+    background-color: gray;
+}
+/* FOOTER */
+.foot-1{
+    background-color: #374758;
+    color: white;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-1 a{
+    text-decoration: none;
+    align-items: center;
+}
+.foot-1 a h2:hover{
+    color: rgb(0, 0, 0);
+}
+.foot-1 a h2{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.foot-4{
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    /* font-weight: bolder; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.pages{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 25px;
+}
+.copy{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 8px;
+}
+/* fade effect */
+.hide{
+    opacity: 0;
+    /* transform: translateX(-50%); */
+    transition: all 3s;
+}
+.show{
+    opacity: 1;
+    /* transform: translateX(0); */
+    transition: all 3s;
+}

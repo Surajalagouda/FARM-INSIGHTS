@@ -1,0 +1,187 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border: 2px solid black;
+    background-image: url(Screenshot\ 2024-05-31\ 185956.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.hero img {
+    height: 50px;
+    width: 50px;
+    border-radius: 200px;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.hero h1 {
+    display: none;
+    color: white;
+    margin-bottom: 100px;
+}
+
+/* returning home button starts */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.btn a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(83, 103, 16, 0.43);
+}
+
+.btn a:hover {
+    background-color: rgb(151, 164, 132);
+    color: black;
+}
+
+/* soil selection container starts */
+.soil{
+    background-image: linear-gradient(rgba(35, 64, 169, 0.449),rgba(160, 84, 84, 0.426)), url(hero1.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.soil h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(247, 244, 210, 0.378);
+}
+.items a{
+    text-decoration: none;
+    color: black;
+}
+.items img{
+    height: 250px;
+    width: 280px;
+    padding: 30px;
+}
+.items img:hover{
+    animation: hover;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+}
+@keyframes hover {
+    0%{
+    padding: 20px;
+    width: 300px;
+    height: 270px;
+    border-bottom: 5px dotted white;
+    }    
+    50%{
+        padding: 10px;
+    width: 320px;
+    height: 290px;
+    border-bottom: 5px dotted white;
+    border-right: 5px dotted whitek;
+    }
+    100%{
+    padding: 10px;
+    width: 320px;
+    height: 290px;
+    border-right: 5px dotted white;
+    border-left: 5px dotted white;
+    border-bottom: 5px dotted white;
+    border-top: 5px dotted white;
+    }
+}
+.select {
+    text-decoration: none;
+    border: 5px dotted white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: aquamarine;
+}
+
+.select:hover {
+    background-color: gray;
+}
+.foot-1{
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.foot-1 a{
+    text-decoration: none;
+    align-items: center;
+}
+.foot-1 a h2:hover{
+    color: rgb(0, 0, 0);
+}
+.foot-1 a h2{
+    text-decoration: none;
+    color: white;
+}
+.foot-4{
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    /* font-weight: bolder; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.pages{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 25px;
+}
+.copy{
+    /* font-size: 1rem;
+    text-align: center; */
+    padding-top: 8px;
+}
